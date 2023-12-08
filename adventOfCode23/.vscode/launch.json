@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["<","03/input.txt"]
+            "args": ["<","04/input.txt"]
         },
         {
             "name": "Python: num_extract.py",

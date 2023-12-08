@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: text_corrector.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/cv11-30/text_corrector.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "<",
+                "cv11-30/pribeh.txt",
+                ">",
+                "cv11-30/pekny_pribeh.txt"
+            ]
+        },
+        {
+            "name": "Python: cisilka.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/cv11-30/cisilka.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "<",
+                "cv11-30/cisla.txt",
+                ">",
+                "cv11-30/vystup.txt"
+            ]
+        }
+    ]
+}

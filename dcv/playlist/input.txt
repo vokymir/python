@@ -1,0 +1,36 @@
+With You
+203
+3.25
+Points of Authority
+200
+3.5
+By Myself
+190
+3.75
+In the End
+216
+4.15
+Voky loves You
+233
+5.0
+Voky hates You
+412
+2.2354
+Voky smiles at You
+120
+3.15
+Voky is crying
+15
+1.89
+Voky is leaving
+175
+2.56
+Voky is back
+1
+4.74
+Take it as you want
+201
+3.54
+Voky je kral
+-5
+6

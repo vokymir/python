@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Route:
     def __init__(self, source:int = -1, destination:int = -1, length:int = -1) -> None:
         self.source:int = source
@@ -34,7 +36,7 @@ def extractSeeds(string:str) -> list[int]:
         res.append(int(orig[i]))
     """
 
-    print(f"{int((len(orig)-1)/2)}")
+    print(f"Going to: {int((len(orig)-1)/2)}")
     print()
     for i in range(len(orig)):
         if i == 0:
@@ -73,6 +75,9 @@ if __name__ == "__main__":
     last:str = "lol"
     lowestNum:int = -1
 
+    startTime = str(datetime.now())
+    print(startTime)
+
     seeds:list[int] = extractSeeds(input())
     maps:list[Map] = []
 
@@ -92,13 +97,23 @@ if __name__ == "__main__":
                 break
             extractLine(map,y)
         
+    midTime = str(datetime.now())
+    print(midTime)
+
+    print(f"Going to: {int((len(seeds)-1))}")
+    print()
+    
     for i in range(len(seeds)):
+        
+        print(f"\033[F{i+1} | {((i+1)/(len(seeds)-1))*100:.2f}%")
+        
+        
         mapIndex:int = 0
-        print(f"{i+1}. seed: {seeds[i]}")
+        #print(f"{i+1}. seed: {seeds[i]}")
         number:int = goThroughMap(seeds[i],maps[mapIndex])
 
         while True:
-            print(f"{maps[mapIndex].source} -> {maps[mapIndex].dest}\n{number}")
+            #print(f"{maps[mapIndex].source} -> {maps[mapIndex].dest}\n{number}")
 
             if mapIndex == len(maps) - 1:
                 break
@@ -112,6 +127,8 @@ if __name__ == "__main__":
         if lowestNum == -1 or number < lowestNum:
             lowestNum = number
     
+    endTime = str(datetime.now())
+    print(f"Start: {startTime}\nEnd: {endTime}")
     print(f"Lowest Location:\n{lowestNum}")
 
 

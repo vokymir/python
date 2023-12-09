@@ -15,20 +15,6 @@
                 "<",
                 "05/input.txt"
             ]
-        },
-        {
-            "name": "Python: num_extract.py",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/01/num_extract.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": [
-                "<",
-                "01/input.txt",
-                ">",
-                "01/output.txt"
-            ]
         }
     ]
 }

@@ -45,7 +45,7 @@ def extractSeeds(string:str) -> list[int]:
             continue
         for j in range(int(orig[i+1])):
             res.append(int(orig[i])+j)
-            print(f"\033[F{i} | {(j+1)/int(orig[i])*100:.2f}% | {j+1}/{orig[i]}")
+            print(f"\033[F{i} | {(j+1)/int(orig[i])*100:.2f}% | {j+1}/{orig[i]} | {str(datetime.now())}")
         print()
     return res
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     
     for i in range(len(seeds)):
         
-        print(f"\033[F{i+1} | {((i+1)/(len(seeds)-1))*100:.2f}%")
+        print(f"\033[F{i+1} | {((i+1)/(len(seeds)-1))*100:.2f}% | {str(datetime.now())}")
         
         
         mapIndex:int = 0
